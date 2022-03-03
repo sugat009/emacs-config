@@ -22,9 +22,15 @@
 ;; (setq doom-font (font-spec :family "monospace" :size 12 :weight 'semi-light)
 ;;       doom-variable-pitch-font (font-spec :family "sans" :size 13))
 
-(setq doom-font (font-spec :family "Fira Mono" :size 18 :weight 'semi-light)
-      doom-variable-pitch-font (font-spec :family "Fira Sans" :size 15)
-      doom-big-font (font-spec :family "Fira Mono" :size 15))
+(cond (IS-MAC ;; set specific font for mac
+       (setq doom-font (font-spec :family "Fira Mono" :size 18 :weight 'semi-light)
+        doom-variable-pitch-font (font-spec :family "Fira Sans" :size 15)
+        doom-big-font (font-spec :family "Fira Mono" :size 15))
+       )
+      (t (setq doom-font (font-spec :family "monospace" :size 18 :weight 'semi-light) ;; default clause
+          doom-variable-pitch-font (font-spec :family "sans" :size 15)
+          doom-big-font (font-spec :family "monospace" :size 15))
+        ))
 
 ;; There are two ways to load a theme. Both assume the theme is installed and
 ;; available. You can either set `doom-theme' or manually load a theme with the
@@ -217,8 +223,10 @@
 ;; macos problem
 ;; home and end key goes to top and bottom of file
 ;; fix to go to beginning and end of line respectively
-(global-set-key (kbd "<home>") 'move-beginning-of-line)
-(global-set-key (kbd "<end>") 'move-end-of-line)
+(cond (IS-MAC
+  (global-set-key (kbd "<home>") 'move-beginning-of-line)
+  (global-set-key (kbd "<end>") 'move-end-of-line)))
+
 
 ;; beacon; cursor flashing
 (beacon-mode 1)
