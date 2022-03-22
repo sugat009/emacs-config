@@ -49,8 +49,14 @@
 ;; ...Or *all* packages (NOT RECOMMENDED; will likely break things)
                                         ;(unpin! t)
 
+;; Modes
 ;; protobuf mode
 (package! protobuf-mode)
+
+;; groovy mode
+(package! groovy-mode)
+
+;; Modes end
 
 ;; treesitter
 (package! tree-sitter)
