@@ -56,6 +56,9 @@
 ;; groovy mode
 (package! groovy-mode)
 
+;; csv mode
+(package! csv-mode)
+
 ;; Modes end
 
 ;; treesitter
