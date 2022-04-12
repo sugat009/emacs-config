@@ -79,8 +79,7 @@
 (unpin! org-roam)
 (package! org-roam-ui)
 
-
-; move text
+;; move text
 (package! move-text)
 
 ;; string-inflection

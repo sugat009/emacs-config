@@ -24,13 +24,13 @@
 
 (cond (IS-MAC ;; set specific font for mac
        (setq doom-font (font-spec :family "Fira Mono" :size 18 :weight 'semi-light)
-        doom-variable-pitch-font (font-spec :family "Fira Sans" :size 15)
-        doom-big-font (font-spec :family "Fira Mono" :size 15))
+             doom-variable-pitch-font (font-spec :family "Fira Sans" :size 15)
+             doom-big-font (font-spec :family "Fira Mono" :size 15))
        )
       (t (setq doom-font (font-spec :family "monospace" :size 18 :weight 'semi-light) ;; default clause
-          doom-variable-pitch-font (font-spec :family "sans" :size 15)
-          doom-big-font (font-spec :family "monospace" :size 15))
-        ))
+               doom-variable-pitch-font (font-spec :family "sans" :size 15)
+               doom-big-font (font-spec :family "monospace" :size 15))
+         ))
 
 ;; There are two ways to load a theme. Both assume the theme is installed and
 ;; available. You can either set `doom-theme' or manually load a theme with the
@@ -71,26 +71,26 @@
   ;; Global settings (defaults)
   (setq doom-themes-enable-bold t    ; if nil, bold is universally disabled
         doom-themes-enable-italic t) ; if nil, italics is universally disabled
-  ; (load-theme 'doom-vibrant t)
-  ; (load-theme 'doom-badger t)
-  ; (load-theme 'doom-gruvbox t)
-  ; (load-theme 'doom-nord t)
-  ; (load-theme 'doom-palenight t)
-  ; (load-theme 'doom-sourcerer t)
+                                        ; (load-theme 'doom-vibrant t)
+                                        ; (load-theme 'doom-badger t)
+                                        ; (load-theme 'doom-gruvbox t)
+                                        ; (load-theme 'doom-nord t)
+                                        ; (load-theme 'doom-palenight t)
+                                        ; (load-theme 'doom-sourcerer t)
   (load-theme 'doom-tomorrow-night t)
-  ; (load-theme 'doom-zenburn t)
-  ; (load-theme 'doom-material t)
-  ; (load-theme 'doom-material-dark t)
-  ; (load-theme 'doom-wilmersdorf t)
-  ; (load-theme 'doom-monokai-spectrum t)
-  ; (load-theme 'doom-moonlight t)
-  ; (load-theme 'doom-xcode t)
-  ; (load-theme 'doom-spacegrey t)
-  ; (load-theme 'doom-snazzy t)
-  ; (load-theme 'atom-one-dark t)
-  ; (load-theme 'moe-dark t)
-  ; (load-theme 'nano-dark t)
-  ; (load-theme 'immaterial-dark t)
+                                        ; (load-theme 'doom-zenburn t)
+                                        ; (load-theme 'doom-material t)
+                                        ; (load-theme 'doom-material-dark t)
+                                        ; (load-theme 'doom-wilmersdorf t)
+                                        ; (load-theme 'doom-monokai-spectrum t)
+                                        ; (load-theme 'doom-moonlight t)
+                                        ; (load-theme 'doom-xcode t)
+                                        ; (load-theme 'doom-spacegrey t)
+                                        ; (load-theme 'doom-snazzy t)
+                                        ; (load-theme 'atom-one-dark t)
+                                        ; (load-theme 'moe-dark t)
+                                        ; (load-theme 'nano-dark t)
+                                        ; (load-theme 'immaterial-dark t)
 
   ;; or for treemacs users
   (setq doom-themes-treemacs-theme "doom-colors") ; use "doom-colors" for less minimal icon theme
@@ -134,19 +134,19 @@
 
 ;; ORG ROAM UI
 (use-package! websocket
-    :after org-roam)
+  :after org-roam)
 
 (use-package! org-roam-ui
-    :after org-roam ;; or :after org
-;;         normally we'd recommend hooking orui after org-roam, but since org-roam does not have
-;;         a hookable mode anymore, you're advised to pick something yourself
-;;         if you don't care about startup time, use
-;;  :hook (after-init . org-roam-ui-mode)
-    :config
-    (setq org-roam-ui-sync-theme t
-          org-roam-ui-follow t
-          org-roam-ui-update-on-save t
-          org-roam-ui-open-on-start t))
+  :after org-roam ;; or :after org
+  ;;         normally we'd recommend hooking orui after org-roam, but since org-roam does not have
+  ;;         a hookable mode anymore, you're advised to pick something yourself
+  ;;         if you don't care about startup time, use
+  ;;  :hook (after-init . org-roam-ui-mode)
+  :config
+  (setq org-roam-ui-sync-theme t
+        org-roam-ui-follow t
+        org-roam-ui-update-on-save t
+        org-roam-ui-open-on-start t))
 
 
 (after! (:and treemacs ace-window)
@@ -224,9 +224,21 @@
 ;; home and end key goes to top and bottom of file
 ;; fix to go to beginning and end of line respectively
 (cond (IS-MAC
-  (global-set-key (kbd "<home>") 'move-beginning-of-line)
-  (global-set-key (kbd "<end>") 'move-end-of-line)))
+       (global-set-key (kbd "<home>") 'move-beginning-of-line)
+       (global-set-key (kbd "<end>") 'move-end-of-line)))
 
 
 ;; beacon; cursor flashing
 (beacon-mode 1)
+
+;; ;; centaur tabs
+;; (after! centaur-tabs
+;;   :ensure t
+;;   :config
+;;   (setq centaur-tabs-style "bar"
+;;         centaur-tabs-set-bar 'over
+;;         centaur-tabs-height 32
+;;         centaur-tabs-set-icons 0
+;;         centaur-tabs-gray-out-icons 'buffer)
+;;   (centaur-tabs-headline-match)
+;;   (centaur-tabs-mode t))
