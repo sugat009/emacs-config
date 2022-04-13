@@ -231,14 +231,15 @@
 ;; beacon; cursor flashing
 (beacon-mode 1)
 
-;; ;; centaur tabs
-;; (after! centaur-tabs
-;;   :ensure t
-;;   :config
-;;   (setq centaur-tabs-style "bar"
-;;         centaur-tabs-set-bar 'over
-;;         centaur-tabs-height 32
-;;         centaur-tabs-set-icons 0
-;;         centaur-tabs-gray-out-icons 'buffer)
-;;   (centaur-tabs-headline-match)
-;;   (centaur-tabs-mode t))
+;; centaur tabs
+(after! centaur-tabs
+  :ensure t
+  :config
+  (setq centaur-tabs-style "bar"
+        centaur-tabs-set-bar 'over
+        centaur-tabs-height 32
+        centaur-tabs-set-icons 0
+        centaur-tabs-gray-out-icons 'buffer)
+  (centaur-tabs-headline-match)
+  (centaur-tabs-mode t)
+  (centaur-tabs-group-by-projectile-project))
