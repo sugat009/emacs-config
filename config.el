@@ -243,3 +243,10 @@
   (centaur-tabs-headline-match)
   (centaur-tabs-mode t)
   (centaur-tabs-group-by-projectile-project))
+
+;; dimmer
+(dimmer-configure-which-key)
+(dimmer-configure-magit)
+(dimmer-configure-org)
+(dimmer-configure-posframe)
+(dimmer-mode 1)

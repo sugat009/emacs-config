@@ -93,3 +93,6 @@
 
 ;; beacon
 (package! beacon)
+
+;; dimmer
+(package! dimmer)
