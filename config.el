@@ -220,13 +220,14 @@
 (when (fboundp 'windmove-default-keybindings)
   (windmove-default-keybindings))
 
-;; macos problem
 ;; home and end key goes to top and bottom of file
 ;; fix to go to beginning and end of line respectively
-(cond (IS-MAC
-       (global-set-key (kbd "<home>") 'move-beginning-of-line)
-       (global-set-key (kbd "<end>") 'move-end-of-line)))
-
+;; For normal mode
+(define-key evil-motion-state-map (kbd "<home>") 'back-to-indentation)
+(define-key evil-motion-state-map (kbd "<end>") 'end-of-line)
+;; For insert mode
+(global-set-key (kbd "<home>") 'doom/backward-to-bol-or-indent)
+(global-set-key (kbd "<end>") 'end-of-line)
 
 ;; beacon; cursor flashing
 (beacon-mode 1)
