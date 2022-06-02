@@ -42,7 +42,10 @@
 
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
-(setq display-line-numbers t)
+(setq display-line-numbers-type 'relative) 
+(global-display-line-numbers-mode)
+;; disable line number in treemacs
+(add-hook 'treemacs-mode-hook (lambda() (display-line-numbers-mode -1)))
 ;; Adds new line to the end of file
 (setq mode-require-final-newline t)
 
