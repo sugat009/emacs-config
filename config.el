@@ -46,6 +46,7 @@
 (global-display-line-numbers-mode)
 ;; disable line number in treemacs
 (add-hook 'treemacs-mode-hook (lambda() (display-line-numbers-mode -1)))
+(add-hook 'dired-mode-hook (lambda() (display-line-numbers-mode -1)))
 ;; Adds new line to the end of file
 (setq mode-require-final-newline t)
 
