@@ -257,3 +257,8 @@
 (dimmer-configure-org)
 (dimmer-configure-posframe)
 (dimmer-mode 1)
+
+;; treemacs
+(after! treemacs
+	(treemacs-display-current-project-exclusively)
+	(treemacs-mode 1))
