@@ -42,7 +42,7 @@
 
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
-(setq display-line-numbers-type 'relative) 
+(setq display-line-numbers-type 'relative)
 (global-display-line-numbers-mode)
 ;; disable line number in treemacs
 (add-hook 'treemacs-mode-hook (lambda() (display-line-numbers-mode -1)))
@@ -229,6 +229,11 @@
 ;; For insert mode
 (global-set-key (kbd "<home>") 'doom/backward-to-bol-or-indent)
 (global-set-key (kbd "<end>") 'end-of-line)
+;; for emulating ctrl + home and ctrl + end in macOS
+(cond (IS-MAC
+       (global-set-key (kbd "s-<up>") #'beginning-of-buffer)
+       (global-set-key (kbd "s-<down>") #'end-of-buffer)
+       ))
 
 ;; beacon; cursor flashing
 (beacon-mode 1)
