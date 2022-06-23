@@ -248,8 +248,7 @@
         centaur-tabs-set-icons 0
         centaur-tabs-gray-out-icons 'buffer)
   (centaur-tabs-headline-match)
-  (centaur-tabs-mode t)
-  (centaur-tabs-group-by-projectile-project))
+  (centaur-tabs-mode t))
 
 ;; dimmer
 (dimmer-configure-which-key)
@@ -260,5 +259,5 @@
 
 ;; treemacs
 (after! treemacs
-	(treemacs-display-current-project-exclusively)
-	(treemacs-mode 1))
+    (treemacs-display-current-project-exclusively)
+    (treemacs))
