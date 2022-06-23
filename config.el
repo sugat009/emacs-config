@@ -69,19 +69,16 @@
 ;; they are implemented.
 ;;
 
-(use-package doom-themes
-  :ensure t
-  :config
-  ;; Global settings (defaults)
-  (setq doom-themes-enable-bold t    ; if nil, bold is universally disabled
-        doom-themes-enable-italic t) ; if nil, italics is universally disabled
+;; Global settings (defaults)
+(setq doom-themes-enable-bold t    ; if nil, bold is universally disabled
+      doom-themes-enable-italic t) ; if nil, italics is universally disabled
                                         ; (load-theme 'doom-vibrant t)
                                         ; (load-theme 'doom-badger t)
                                         ; (load-theme 'doom-gruvbox t)
                                         ; (load-theme 'doom-nord t)
                                         ; (load-theme 'doom-palenight t)
                                         ; (load-theme 'doom-sourcerer t)
-  ;(load-theme 'doom-tomorrow-night t)
+                                        ;(load-theme 'doom-tomorrow-night t)
                                         ; (load-theme 'doom-zenburn t)
                                         ; (load-theme 'doom-material t)
                                         ; (load-theme 'doom-material-dark t)
@@ -91,17 +88,17 @@
                                         ; (load-theme 'doom-xcode t)
                                         ; (load-theme 'doom-spacegrey t)
                                         ; (load-theme 'doom-snazzy t)
-                                        (load-theme 'atom-one-dark t)
+(load-theme 'atom-one-dark t)
                                         ; (load-theme 'moe-dark t)
                                         ; (load-theme 'nano-dark t)
                                         ; (load-theme 'immaterial-dark t)
 
-  ;; or for treemacs users
-  (setq doom-themes-treemacs-theme "doom-colors") ; use "doom-colors" for less minimal icon theme
-  (doom-themes-treemacs-config)
-  (doom-themes-visual-bell-config)
-  ;; Corrects (and improves) org-mode's native fontification.
-  (doom-themes-org-config))
+;; or for treemacs users
+(setq doom-themes-treemacs-theme "doom-colors") ; use "doom-colors" for less minimal icon theme
+(doom-themes-treemacs-config)
+(doom-themes-visual-bell-config)
+;; Corrects (and improves) org-mode's native fontification.
+(doom-themes-org-config)
 
 
 ;; Custom config begins
