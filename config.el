@@ -259,5 +259,7 @@
 
 ;; treemacs
 (after! treemacs
-    (treemacs-display-current-project-exclusively)
-    (treemacs))
+  (treemacs-display-current-project-exclusively)
+  (treemacs))
+
+(set-fringe-mode 0)
