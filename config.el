@@ -78,7 +78,7 @@
                                         ; (load-theme 'doom-nord t)
                                         ; (load-theme 'doom-palenight t)
                                         ; (load-theme 'doom-sourcerer t)
-                                        ;(load-theme 'doom-tomorrow-night t)
+                                        ; (load-theme 'doom-tomorrow-night t)
                                         ; (load-theme 'doom-zenburn t)
                                         ; (load-theme 'doom-material t)
                                         ; (load-theme 'doom-material-dark t)
@@ -92,6 +92,7 @@
                                         ; (load-theme 'moe-dark t)
                                         ; (load-theme 'nano-dark t)
                                         ; (load-theme 'immaterial-dark t)
+                                        ; (load-theme 'zerodark t)
 
 ;; or for treemacs users
 (setq doom-themes-treemacs-theme "doom-colors") ; use "doom-colors" for less minimal icon theme
@@ -261,5 +262,3 @@
 (after! treemacs
   (treemacs-display-current-project-exclusively)
   (treemacs))
-
-(set-fringe-mode 0)
