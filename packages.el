@@ -96,3 +96,6 @@
 
 ;; dimmer
 (package! dimmer)
+
+;; why this
+(package! why-this)

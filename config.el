@@ -108,12 +108,16 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages '(pyenv-mode rainbow-delimiters)))
+ '(package-selected-packages '(pyenv-mode rainbow-delimiters))
+ '(why-this-echo-format "%A::%t::%i")
+ '(why-this-message-format "%A :: %t :: %i"))
+
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(why-this-face ((t (:foreground "dim gray" :slant italic))))
  )
 
 (add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
