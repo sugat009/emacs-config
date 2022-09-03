@@ -99,3 +99,15 @@
 
 ;; why this
 (package! why-this)
+
+;; ag
+(package! ag)
+
+;; ripgrep
+(package! ripgrep)
+
+;; rg
+(package! rg)
+
+;; deadgrep
+(package! deadgrep)

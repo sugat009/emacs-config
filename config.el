@@ -266,3 +266,8 @@
 (after! treemacs
   (treemacs-display-current-project-exclusively)
   (treemacs))
+
+;; deadgrep
+(map! :leader
+      :desc "Deadgrep search"
+      "\\" #'deadgrep)
