@@ -83,7 +83,7 @@
                                         ; (load-theme 'doom-material t)
                                         ; (load-theme 'doom-material-dark t)
                                         ; (load-theme 'doom-wilmersdorf t)
-                                        ; (load-theme 'doom-monokai-spectrum t)
+                                        ; (load-theme 'doom-monokai-machine t)
                                         ; (load-theme 'doom-moonlight t)
                                         ; (load-theme 'doom-xcode t)
                                         ; (load-theme 'doom-spacegrey t)
