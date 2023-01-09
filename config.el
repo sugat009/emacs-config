@@ -72,27 +72,27 @@
 ;; Global settings (defaults)
 (setq doom-themes-enable-bold t    ; if nil, bold is universally disabled
       doom-themes-enable-italic t) ; if nil, italics is universally disabled
+                                        ; (load-theme 'doom-one t)
                                         ; (load-theme 'doom-vibrant t)
                                         ; (load-theme 'doom-badger t)
                                         ; (load-theme 'doom-gruvbox t)
                                         ; (load-theme 'doom-nord t)
                                         ; (load-theme 'doom-palenight t)
                                         ; (load-theme 'doom-sourcerer t)
-                                        ; (load-theme 'doom-tomorrow-night t)
+(load-theme 'doom-tomorrow-night t)
                                         ; (load-theme 'doom-zenburn t)
                                         ; (load-theme 'doom-material t)
                                         ; (load-theme 'doom-material-dark t)
                                         ; (load-theme 'doom-wilmersdorf t)
-                                        ; (load-theme 'doom-monokai-machine t)
+                                        ; (load-theme 'doom-molokai t)
+                                        ; (load-theme 'doom-monokai-pro t)
                                         ; (load-theme 'doom-moonlight t)
                                         ; (load-theme 'doom-xcode t)
                                         ; (load-theme 'doom-spacegrey t)
                                         ; (load-theme 'doom-snazzy t)
-(load-theme 'atom-one-dark t)
+                                        ; (load-theme 'atom-one-dark t)
                                         ; (load-theme 'moe-dark t)
                                         ; (load-theme 'nano-dark t)
-                                        ; (load-theme 'immaterial-dark t)
-                                        ; (load-theme 'zerodark t)
 
 ;; or for treemacs users
 (setq doom-themes-treemacs-theme "doom-colors") ; use "doom-colors" for less minimal icon theme
