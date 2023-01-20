@@ -104,20 +104,13 @@
 
 ;; Custom config begins
 (custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
  '(package-selected-packages '(pyenv-mode rainbow-delimiters))
  '(why-this-echo-format "%A::%t::%i")
  '(why-this-message-format "%A :: %t :: %i"))
 
 (custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
  '(why-this-face ((t (:foreground "dim gray" :slant italic))))
+ '(font-lock-variable-name-face ((t (:foreground "#aec2d3"))))
  )
 
 (add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
@@ -271,3 +264,11 @@
 (map! :leader
       :desc "Deadgrep search"
       "\\" #'deadgrep)
+
+;; lsp
+;; there was an issue in my mac which led to having
+;; issues with LSP and treemacs so, until fix is found
+;; stopping file watching in MAC
+(cond (IS-MAC
+       (setq lsp-enable-file-watchers nil)
+       ))
