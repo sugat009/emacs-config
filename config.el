@@ -111,6 +111,9 @@
 (custom-set-faces
  '(why-this-face ((t (:foreground "dim gray" :slant italic))))
  '(font-lock-variable-name-face ((t (:foreground "#aec2d3"))))
+ '(tree-sitter-hl-face:property ((t (:inherit font-lock-constant-face :slant normal))))
+ '(tree-sitter-hl-face:comment ((t (:inherit font-lock-comment-face :slant italic))))
+ '(tree-sitter-hl-face:doc ((t (:inherit font-lock-doc-face :slant italic))))
  )
 
 (add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
