@@ -27,9 +27,9 @@
              doom-variable-pitch-font (font-spec :family "Fira Sans" :size 15)
              doom-big-font (font-spec :family "Fira Mono" :size 15))
        )
-      (t (setq doom-font (font-spec :family "monospace" :size 18 :weight 'semi-light) ;; default clause
-               doom-variable-pitch-font (font-spec :family "sans" :size 15)
-               doom-big-font (font-spec :family "monospace" :size 15))
+      (t (setq doom-font (font-spec :family "DejaVu Sans Mono" :size 18 :weight 'semi-light) ;; default clause
+               doom-variable-pitch-font (font-spec :family "DejaVu Sans Mono" :size 15)
+               doom-big-font (font-spec :family "DejaVu Sans Mono" :size 15))
          ))
 
 ;; There are two ways to load a theme. Both assume the theme is installed and
