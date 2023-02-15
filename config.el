@@ -23,7 +23,7 @@
 ;;       doom-variable-pitch-font (font-spec :family "sans" :size 13))
 
 (cond (IS-MAC ;; set specific font for mac
-       (setq doom-font (font-spec :family "Fira Mono" :size 18 :weight 'semi-light)
+       (setq doom-font (font-spec :family "Fira Mono" :size 17 :weight 'semi-light)
              doom-variable-pitch-font (font-spec :family "Fira Sans" :size 15)
              doom-big-font (font-spec :family "Fira Mono" :size 15))
        )
@@ -275,3 +275,7 @@
 (cond (IS-MAC
        (setq lsp-enable-file-watchers nil)
        ))
+
+;; disables the minibuffer popup of object signatures
+(setq lsp-signature-auto-activate nil)
+
