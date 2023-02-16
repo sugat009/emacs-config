@@ -23,9 +23,9 @@
 ;;       doom-variable-pitch-font (font-spec :family "sans" :size 13))
 
 (cond (IS-MAC ;; set specific font for mac
-       (setq doom-font (font-spec :family "Fira Mono" :size 17 :weight 'semi-light)
-             doom-variable-pitch-font (font-spec :family "Fira Sans" :size 15)
-             doom-big-font (font-spec :family "Fira Mono" :size 15))
+       (setq doom-font (font-spec :family "Fira Mono" :size 16 :weight 'semi-light)
+             doom-variable-pitch-font (font-spec :family "Fira Sans" :size 14)
+             doom-big-font (font-spec :family "Fira Mono" :size 14))
        )
       (t (setq doom-font (font-spec :family "DejaVu Sans Mono" :size 18 :weight 'semi-light) ;; default clause
                doom-variable-pitch-font (font-spec :family "DejaVu Sans Mono" :size 15)
