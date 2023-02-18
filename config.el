@@ -79,7 +79,7 @@
                                         ; (load-theme 'doom-nord t)
                                         ; (load-theme 'doom-palenight t)
                                         ; (load-theme 'doom-sourcerer t)
-(load-theme 'doom-tomorrow-night t)
+                                        ; (load-theme 'doom-tomorrow-night t)
                                         ; (load-theme 'doom-zenburn t)
                                         ; (load-theme 'doom-material t)
                                         ; (load-theme 'doom-material-dark t)
@@ -90,7 +90,7 @@
                                         ; (load-theme 'doom-xcode t)
                                         ; (load-theme 'doom-spacegrey t)
                                         ; (load-theme 'doom-snazzy t)
-                                        ; (load-theme 'atom-one-dark t)
+(load-theme 'atom-one-dark t)
                                         ; (load-theme 'moe-dark t)
                                         ; (load-theme 'nano-dark t)
 
