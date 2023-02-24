@@ -66,12 +66,7 @@
 (package! tree-sitter-langs)
 
 ;; themes
-(package! moe-theme)
-(package! spacemacs-theme)
 (package! atom-one-dark-theme)
-(package! immaterial-theme)
-(package! zerodark-theme)
-(package! nano-theme)
 
 ;; ORG ROAM UI
 ;; to make sure that org-roam is of latest version
@@ -100,18 +95,12 @@
 ;; why this
 (package! why-this)
 
-;; ag
-(package! ag)
-
-;; ripgrep
-(package! ripgrep)
-
-;; rg
-(package! rg)
-
 ;; deadgrep
 (package! deadgrep)
 
 ;; due to issues with emacs 28.2
 (package! transient :pin "c2bdf7e12c530eb85476d3aef317eb2941ab9440")
 (package! with-editor :pin "391e76a256aeec6b9e4cbd733088f30c677d965b")
+
+;; cht.sh
+(package! cheat-sh)
