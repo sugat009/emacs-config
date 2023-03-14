@@ -89,6 +89,7 @@
 ;; Custom config begins
 (custom-set-variables
  '(package-selected-packages '(pyenv-mode rainbow-delimiters))
+ '(flycheck-checker-error-threshold 5000)
  '(why-this-echo-format "%A::%t::%i")
  '(why-this-message-format "%A :: %t :: %i"))
 
