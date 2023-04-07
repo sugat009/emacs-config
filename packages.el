@@ -92,9 +92,6 @@
 ;; dimmer
 (package! dimmer)
 
-;; why this
-(package! why-this)
-
 ;; deadgrep
 (package! deadgrep)
 
@@ -104,3 +101,6 @@
 
 ;; cht.sh
 (package! cheat-sh)
+
+;; blamer
+(package! blamer)

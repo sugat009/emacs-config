@@ -89,12 +89,9 @@
 ;; Custom config begins
 (custom-set-variables
  '(package-selected-packages '(pyenv-mode rainbow-delimiters))
- '(flycheck-checker-error-threshold 5000)
- '(why-this-echo-format "%A::%t::%i")
- '(why-this-message-format "%A :: %t :: %i"))
+ '(flycheck-checker-error-threshold 5000))
 
 (custom-set-faces
- '(why-this-face ((t (:foreground "dim gray" :slant italic))))
  '(font-lock-variable-name-face ((t (:foreground "gray80"))))
  '(tree-sitter-hl-face:property ((t (:inherit font-lock-constant-face :slant normal))))
  '(tree-sitter-hl-face:comment ((t (:inherit font-lock-comment-face :slant italic))))
@@ -265,3 +262,18 @@
 (setq lsp-signature-auto-activate nil)
 
 (global-set-key (kbd "C-,") 'cheat-sh-search)
+
+;; blamer
+(use-package! blamer
+  :defer 20
+  :custom
+  (blamer-idle-time 0.3)
+  (blamer-min-offset 70)
+  :custom-face
+  (blamer-face ((t :foreground "#5c5c5c"
+                    :background nil
+                    :height 140
+                    :italic t))))
+(map! :leader
+      :desc "Toggle Blamer" "i b" #'blamer-mode)
+
