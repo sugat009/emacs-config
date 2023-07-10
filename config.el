@@ -181,11 +181,6 @@
   (setq posframe-mouse-banish nil)
   )
 
-;; helm
-(after! helm-mode
-  (setq posframe-mouse-banish nil)
-  )
-
 ;; ORG ROAM optimizations
 (defun org-roam-node-insert-immediate (arg &rest args)
   (interactive "P")
@@ -271,9 +266,8 @@
   (blamer-min-offset 70)
   :custom-face
   (blamer-face ((t :foreground "#5c5c5c"
-                    :background nil
-                    :height 140
-                    :italic t))))
+                   :background nil
+                   :height 140
+                   :italic t))))
 (map! :leader
       :desc "Toggle Blamer" "i b" #'blamer-mode)
-
