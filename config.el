@@ -271,3 +271,8 @@
                    :italic t))))
 (map! :leader
       :desc "Toggle Blamer" "i b" #'blamer-mode)
+
+;; breadcrumbs
+(setq lsp-headerline-breadcrumb-enable t)
+(setq lsp-headerline-breadcrumb-segments '(symbols))
+(setq lsp-headerline-breadcrumb-enable-diagnostics nil)
