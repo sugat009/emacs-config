@@ -107,3 +107,6 @@
 
 ;; disable evil snipe
 (package! evil-snipe :disable t)
+
+;; crux
+(package! crux)
