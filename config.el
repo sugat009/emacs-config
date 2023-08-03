@@ -276,3 +276,7 @@
 (setq lsp-headerline-breadcrumb-enable t)
 (setq lsp-headerline-breadcrumb-segments '(symbols))
 (setq lsp-headerline-breadcrumb-enable-diagnostics nil)
+
+(after! evil
+  (map! :n "s" 'evil-avy-goto-char)
+  (map! :n "f" 'evil-avy-goto-char-2))

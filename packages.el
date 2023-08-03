@@ -104,3 +104,6 @@
 
 ;; blamer
 (package! blamer)
+
+;; disable evil snipe
+(package! evil-snipe :disable t)
