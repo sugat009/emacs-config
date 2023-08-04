@@ -180,6 +180,9 @@
 (after! ivy-mode
   (setq posframe-mouse-banish nil)
   )
+(after! ivy-posframe
+  (setq ivy-posframe-display-functions-alist
+        '((t . ivy-posframe-display-at-frame-top-center))))
 
 ;; ORG ROAM optimizations
 (defun org-roam-node-insert-immediate (arg &rest args)
