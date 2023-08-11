@@ -283,3 +283,5 @@
 (after! evil
   (map! :n "s" 'evil-avy-goto-char)
   (map! :n "f" 'evil-avy-goto-char-2))
+
+(advice-add #'doom-modeline-update-vcs-text :override #'ignore)
