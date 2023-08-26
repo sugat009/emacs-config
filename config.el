@@ -92,7 +92,7 @@
  '(flycheck-checker-error-threshold 5000))
 
 (custom-set-faces
- '(font-lock-variable-name-face ((t (:foreground "gray80"))))
+ '(font-lock-variable-name-face ((t (:foreground "#CD5C5C"))))
  '(tree-sitter-hl-face:property ((t (:inherit font-lock-constant-face :slant normal))))
  '(tree-sitter-hl-face:comment ((t (:inherit font-lock-comment-face :slant italic))))
  '(tree-sitter-hl-face:doc ((t (:inherit font-lock-doc-face :slant italic))))
@@ -280,8 +280,15 @@
 (setq lsp-headerline-breadcrumb-segments '(symbols))
 (setq lsp-headerline-breadcrumb-enable-diagnostics nil)
 
+;; disable evil's <s> and <f> and overrwrite with avy functions
 (after! evil
   (map! :n "s" 'evil-avy-goto-char)
   (map! :n "f" 'evil-avy-goto-char-2))
 
+;; remove git branch from modeline
 (advice-add #'doom-modeline-update-vcs-text :override #'ignore)
+
+;; disable semgrep lsp as it causes emacs to freeze in large projects
+(after! lsp-mode
+  (setq lsp-disabled-clients '(semgrep-ls))
+)
