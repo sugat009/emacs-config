@@ -79,12 +79,11 @@
                                         ; (load-theme 'atom-one-dark t)
 
 ;; or for treemacs users
-(setq doom-themes-treemacs-theme "doom-colors") ; use "doom-colors" for less minimal icon theme
+(setq doom-themes-treemacs-theme "nerd-icons")
 (doom-themes-treemacs-config)
 (doom-themes-visual-bell-config)
 ;; Corrects (and improves) org-mode's native fontification.
 (doom-themes-org-config)
-
 
 ;; Custom config begins
 (custom-set-variables
@@ -291,4 +290,4 @@
 ;; disable semgrep lsp as it causes emacs to freeze in large projects
 (after! lsp-mode
   (setq lsp-disabled-clients '(semgrep-ls))
-)
+  )
