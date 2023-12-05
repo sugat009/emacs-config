@@ -67,6 +67,7 @@
 
 ;; themes
 (package! atom-one-dark-theme)
+(package! treemacs-nerd-icons)
 
 ;; ORG ROAM UI
 ;; to make sure that org-roam is of latest version

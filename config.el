@@ -268,7 +268,7 @@
   (blamer-min-offset 70)
   :custom-face
   (blamer-face ((t :foreground "#5c5c5c"
-                   :background nil
+                   :background unspecified
                    :height 140
                    :italic t))))
 (map! :leader
