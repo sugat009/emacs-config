@@ -111,3 +111,6 @@
 
 ;; crux
 (package! crux)
+
+;; all-the-icons
+(package! all-the-icons)
