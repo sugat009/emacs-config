@@ -168,9 +168,6 @@
 (add-hook 'protobuf-mode-hook
           (lambda () (c-add-style "my-style" my-protobuf-style t)))
 
-;; tree sitter mode
-(global-tree-sitter-mode)
-(add-hook 'tree-sitter-after-on-hook #'tree-sitter-hl-mode)
 (tree-sitter-hl-add-patterns 'python
   [((string) @constant
     (.match? @constant "^\"\"\""))])
